@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calcul du périmètre et de l'aire d'un carré</title>
+  <script>
+    function calculer() {
+      var cote = parseFloat(document.getElementById('cote').value);
+      var perimetre = 4 * cote;
+      var aire = cote * cote;
+      
+      document.getElementById('perimetre').innerHTML = perimetre;
+      document.getElementById('aire').innerHTML = aire;
+    }
+  </script>
+</head>
+<body>
+  <h1>Calcul du périmètre et de l'aire d'un carré</h1>
+  
+  <label for="cote">Côté du carré :</label>
+  <input type="number" id="cote">
+  <button onclick="calculer()">Calculer</button>
+  
+  <h3>Résultats :</h3>
+  <p>Périmètre : <span id="perimetre"></span></p>
+  <p>Aire : <span id="aire"></span></p>
+</body>
+</html>

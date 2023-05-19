@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convertir en Dirhams</title>
+  <script>
+    function convertirEnDirhams() {
+      var tauxDeChange = 10.65; 
+      var montantEuros = parseFloat(document.getElementById('montantEuros').value);
+      var montantDirhams = montantEuros * tauxDeChange;
+      
+      document.getElementById('montantDirhams').innerHTML = montantDirhams.toFixed(2);
+    }
+  </script>
+</head>
+<body>
+  <h1>Convertisseur Euros - Dirhams</h1>
+  
+  <label for="montantEuros">Montant en Euros :</label>
+  <input type="number" id="montantEuros">
+  <button onclick="convertirEnDirhams()">Convertir</button>
+  
+  <p id="montantDirhams"></p>
+</body>
+</html>
